@@ -51,6 +51,11 @@ img {
   cursor: pointer;
 }
 
+.btn:hover {
+  /* box-shadow: none; */
+  box-shadow: 0 0px 20px 0 #dbedf3;
+}
+
 footer {
   margin-top: 5%;
   color: #eeeeee;
