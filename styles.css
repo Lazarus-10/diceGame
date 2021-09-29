@@ -36,10 +36,10 @@ img {
 
 .btn {
   display: block;
-  border: 10px solid #ab2020;
+  border: 10px solid #292b2c;
   padding: 5px 80px;
   color: #4ecca3;
-  background-color: #ab2020;
+  background-color: #292b2c;
   /* text-shadow: 1px 0 #dbedf3; */
   border-radius: 20px;
   margin: auto;
@@ -47,13 +47,13 @@ img {
   font-size: 1.8rem;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
-  box-shadow: 0 5px 4px 0 #dbedf3;
+  box-shadow: 0 0px 20px 0 #333536;
   cursor: pointer;
 }
 
 .btn:hover {
   /* box-shadow: none; */
-  box-shadow: 0 0px 20px 0 #dbedf3;
+  box-shadow: 0 5px 4px 0 #3b4141;
 }
 
 footer {
