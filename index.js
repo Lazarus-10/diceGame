@@ -20,6 +20,6 @@ document.querySelector(".btn").addEventListener("click", function(){
     }else if(randomNumber1 < randomNumber2){
         document.getElementsByTagName("h1")[0].innerHTML = "Player 2 Wins!⛳";
     }else{
-        document.getElementsByTagName("h1")[0].innerHTML = "Draw!🧤";
+        document.getElementsByTagName("h1")[0].innerHTML = "It's A Draw!  🧤";
     }
 });
