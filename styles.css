@@ -66,5 +66,13 @@ footer {
 @media (max-width: 1025px) {
   .btn {
     margin-top: 400px;
+    padding: 20px 200px;
+  }
+
+  footer {
+    margin-top: 50%;
+    color: #eeeeee;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
   }
 }
