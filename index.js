@@ -35,15 +35,18 @@ function start(){
     }, 100);
     var sound = new Audio("dice.mp3");
     sound.play();
-    document.querySelectorAll("img")[0].setAttribute("src", randomDiceImage1);
-    document.querySelectorAll("img")[1].setAttribute("src", randomDiceImage2);
-    
-    
-    if(randomNumber1 > randomNumber2){
-        document.getElementsByTagName("h1")[0].innerHTML = "⛳" + name1 + " Wins!";
-    }else if(randomNumber1 < randomNumber2){
-        document.getElementsByTagName("h1")[0].innerHTML = name2 + " Wins!⛳";
-    }else{
-        document.getElementsByTagName("h1")[0].innerHTML = "It's A Draw!  🧤";
-    }
+
+    setTimeout(() => {
+        document.querySelectorAll("img")[0].setAttribute("src", randomDiceImage1);
+        document.querySelectorAll("img")[1].setAttribute("src", randomDiceImage2);
+        
+        
+        if(randomNumber1 > randomNumber2){
+            document.getElementsByTagName("h1")[0].innerHTML = "⛳" + name1 + " Wins!";
+        }else if(randomNumber1 < randomNumber2){
+            document.getElementsByTagName("h1")[0].innerHTML = name2 + " Wins!⛳";
+        }else{
+            document.getElementsByTagName("h1")[0].innerHTML = "It's A Draw!  🧤";
+        }
+    }, 300);
 }
