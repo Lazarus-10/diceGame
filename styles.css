@@ -20,30 +20,30 @@ h1 {
   margin: 30px;
   font-family: "Lobster", cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 6rem;
   color: #4ecca3;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #4ecca3;
   font-family: "Indie Flower", cursive;
 }
 
 img {
-  width: 80%;
+  width: 70%;
 }
 
 .btn {
   display: block;
   border: 10px solid #292b2c;
-  padding: 5px 80px;
+  padding: 5px 60px;
   color: #4ecca3;
   background-color: #292b2c;
   /* text-shadow: 1px 0 #dbedf3; */
   border-radius: 20px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 1.8rem;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
