@@ -51,9 +51,9 @@ img {
   cursor: pointer;
 }
 
-.btn:hover {
-  /* box-shadow: none; */
-  box-shadow: 0 5px 4px 0 #3b4141;
+.pressed {
+  box-shadow: 0 5px 4px 0 #dbedf3;
+  opacity: 0.8;
 }
 
 footer {
@@ -68,9 +68,11 @@ footer {
     font-size: 4.5rem;
     margin-top: 400px;
     padding: 30px 200px;
+    border-radius: 40px;
   }
 
   footer {
+    font-size: 1.9rem;
     margin-top: 40%;
     color: #eeeeee;
     text-align: center;

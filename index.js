@@ -5,6 +5,7 @@ document.getElementsByTagName("p")[0].innerHTML = name1;
 document.getElementsByTagName("p")[1].innerHTML = name2;
 
 document.querySelector(".btn").addEventListener("click", function(){
+
     let randomNumber1 = 1 + Math.floor(Math.random()*6);
     let randomNumber2 = 1 + Math.floor(Math.random()*6);
 
@@ -14,7 +15,10 @@ document.querySelector(".btn").addEventListener("click", function(){
 // document.querySelector(".img1").src = randomDiceImage1;
 // document.querySelector(".img2").src = randomDiceImage2;
 
-
+    document.querySelector(".btn").classList.add("pressed");
+    setTimeout(() => {
+        document.querySelector(".btn").classList.remove("pressed");
+    }, 100);
     var sound = new Audio("dice.mp3");
     sound.play();
     document.querySelectorAll("img")[0].setAttribute("src", randomDiceImage1);
