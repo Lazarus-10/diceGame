@@ -1,11 +1,21 @@
-let name1 = prompt("Enter Player 1 Name");
-let name2 = prompt("Enter Player 2 Name");
+var name1 = prompt("Enter Player 1 Name", "Player 1");
+var name2 = prompt("Enter Player 2 Name", "Player 2");
 
 document.getElementsByTagName("p")[0].innerHTML = name1;
 document.getElementsByTagName("p")[1].innerHTML = name2;
 
 document.querySelector(".btn").addEventListener("click", function(){
+    start();
+});
 
+document.addEventListener("keypress", function(event){
+    if(event.code === "Space" || event.code === "Enter"){
+        start();
+    }
+})
+
+
+function start(){
     let randomNumber1 = 1 + Math.floor(Math.random()*6);
     let randomNumber2 = 1 + Math.floor(Math.random()*6);
 
@@ -32,4 +42,4 @@ document.querySelector(".btn").addEventListener("click", function(){
     }else{
         document.getElementsByTagName("h1")[0].innerHTML = "It's A Draw!  🧤";
     }
-});
+}
