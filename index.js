@@ -1,3 +1,9 @@
+let name1 = prompt("Enter Player 1 Name");
+let name2 = prompt("Enter Player 2 Name");
+
+document.getElementsByTagName("p")[0].innerHTML = name1;
+document.getElementsByTagName("p")[1].innerHTML = name2;
+
 document.querySelector(".btn").addEventListener("click", function(){
     let randomNumber1 = 1 + Math.floor(Math.random()*6);
     let randomNumber2 = 1 + Math.floor(Math.random()*6);
@@ -16,9 +22,9 @@ document.querySelector(".btn").addEventListener("click", function(){
     
     
     if(randomNumber1 > randomNumber2){
-        document.getElementsByTagName("h1")[0].innerHTML = "⛳Player 1 Wins!";
+        document.getElementsByTagName("h1")[0].innerHTML = "⛳" + name1 + " Wins!";
     }else if(randomNumber1 < randomNumber2){
-        document.getElementsByTagName("h1")[0].innerHTML = "Player 2 Wins!⛳";
+        document.getElementsByTagName("h1")[0].innerHTML = name2 + " Wins!⛳";
     }else{
         document.getElementsByTagName("h1")[0].innerHTML = "It's A Draw!  🧤";
     }
