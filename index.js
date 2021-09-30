@@ -1,8 +1,12 @@
 var name1 = prompt("Enter Player 1 Name", "Player 1");
 var name2 = prompt("Enter Player 2 Name", "Player 2");
 
+if(name1.length !== 0)
 document.getElementsByTagName("p")[0].innerHTML = name1;
+else name1 = "Player 1"
+if(name2.length !== 0)
 document.getElementsByTagName("p")[1].innerHTML = name2;
+else name2 = "Player 2"
 
 document.querySelector(".btn").addEventListener("click", function(){
     start();
