@@ -73,9 +73,13 @@ footer {
 
   footer {
     font-size: 1.9rem;
-    margin-top: 40%;
+    margin-top: 20%;
     color: #eeeeee;
     text-align: center;
     font-family: "Indie Flower", cursive;
+  }
+
+  .img-container {
+    margin-top: 200px;
   }
 }
