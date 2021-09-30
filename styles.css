@@ -20,30 +20,30 @@ h1 {
   margin: 30px;
   font-family: "Lobster", cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 6rem;
+  font-size: 8rem;
   color: #4ecca3;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #4ecca3;
   font-family: "Indie Flower", cursive;
 }
 
 img {
-  width: 70%;
+  width: 80%;
 }
 
 .btn {
   display: block;
   border: 10px solid #292b2c;
-  padding: 5px 60px;
+  padding: 5px 50px;
   color: #4ecca3;
   background-color: #292b2c;
   /* text-shadow: 1px 0 #dbedf3; */
   border-radius: 20px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 1.8rem;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
@@ -63,6 +63,20 @@ footer {
   font-family: "Indie Flower", cursive;
 }
 
+@media (min-width: 1026px) {
+  h1 {
+    font-size: 5.5rem;
+    color: #4ecca3;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 70%;
+  }
+}
 @media (max-width: 1025px) {
   .btn {
     font-size: 4.1rem;
